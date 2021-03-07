@@ -1,0 +1,90 @@
+{% extends 'base.html'%}
+{% block title %}
+	Rede Sociales
+{% endblock %}
+
+{% block content %}
+    <main class="main">
+        <!--Formulario de Postagem-->
+        <div class="newPost">
+            <div class="infoUser">
+                <div class="imgUser">
+                </div>
+                <strong>{{nome}}</strong>
+            </div>
+
+            <form action="" class="formPost">
+                <textarea name="textarea" placeholder="O que está pensando agora?"></textarea>
+
+                <div class="iconsAndButtons">
+                    <div class="icons">
+                        <button class="btnFileForm"><img src="{{url_for('static', filename='/img/video.svg')}}" alt="Adicionar um video"></button>
+                        <button class="btnFileForm"><img src="{{url_for('static', filename='/img/img.svg')}}" alt="Adicionar uma imagem"></button>
+                        <button class="btnFileForm"><img src="{{url_for('static', filename='/img/gif.svg')}}" alt="Adicionar um gif"></button>
+                    </div>
+
+                    <button type="submit" class="btnSubmitForm">Publicar</button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="posts">
+            <li class="post">
+                <div class="infoUserPost">
+                    <div class="imgUserPost"></div>
+                    <div class="nameAndHour">
+                        <strong>{{nome}}</strong>
+                        <p>21h</p>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias minus atque eligendi fugit pariatur beatae reiciendis id autem doloremque aperiam veniam, nostrum sequi eius earum tenetur amet laudantium? Minus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi expedita nihil autem nulla repellat ea quos reprehenderit cum, est, in soluta necessitatibus, dicta quibusdam! Nulla labore rerum hic vel minima?
+                </p>
+
+                <div class="actionBtnPost">
+                    <button type="button" class="filesPost like"><img src="{{url_for('static', filename='/img/heart.svg')}}" alt="Curtir">Curtir</button>
+                    <button type="button" class="filesPost comment"><img src="{{url_for('static', filename='/img/comment.svg')}}" alt="Comentar">Comentar</button>
+                    <button type="button" class="filesPost share"><img src="{{url_for('static', filename='/img/share.svg')}}" alt="Compartilhar">Compartilhar</button>
+                </div>
+            </li>
+
+            <li class="post">
+                <div class="infoUserPost">
+                    <div class="imgUserPost"></div>
+                    <div class="nameAndHour">
+                        <strong>{{nome}}</strong>
+                        <p>21h</p>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias minus atque eligendi fugit pariatur beatae reiciendis id autem doloremque aperiam veniam, nostrum sequi eius earum tenetur amet laudantium? Minus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi expedita nihil autem nulla repellat ea quos reprehenderit cum, est, in soluta necessitatibus, dicta quibusdam! Nulla labore rerum hic vel minima?
+                </p>
+
+                <div class="actionBtnPost">
+                    <button type="button" class="filesPost like"><img src="{{url_for('static', filename='/img/heart.svg')}}" alt="Curtir">Curtir</button>
+                    <button type="button" class="filesPost comment"><img src="{{url_for('static', filename='/img/comment.svg')}}" alt="Comentar">Comentar</button>
+                    <button type="button" class="filesPost share"><img src="{{url_for('static', filename='/img/share.svg')}}" alt="Compartilhar">Compartilhar</button>
+                </div>
+            </li>
+
+            <li class="post">
+                <div class="infoUserPost">
+                    <div class="imgUserPost"></div>
+                    <div class="nameAndHour">
+                        <strong>{{nome}}</strong>
+                        <p>21h</p>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias minus atque eligendi fugit pariatur beatae reiciendis id autem doloremque aperiam veniam, nostrum sequi eius earum tenetur amet laudantium? Minus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi expedita nihil autem nulla repellat ea quos reprehenderit cum, est, in soluta necessitatibus, dicta quibusdam! Nulla labore rerum hic vel minima?
+                </p>
+
+                <div class="actionBtnPost">
+                    <button type="button" class="filesPost like"><img src="{{url_for('static', filename='/img/heart.svg')}}" alt="Curtir">Curtir</button>
+                    <button type="button" class="filesPost comment"><img src="{{url_for('static', filename='/img/comment.svg')}}" alt="Comentar">Comentar</button>
+                    <button type="button" class="filesPost share"><img src="{{url_for('static', filename='/img/share.svg')}}" alt="Compartilhar">Compartilhar</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+{% endblock %}

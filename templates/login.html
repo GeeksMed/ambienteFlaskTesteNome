@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% block title %}
+	Rede Sociales
+{% endblock %}
+
+{% block content %}
+    <script>
+        function myFunction() {
+            return document.getElementById("Nome").innerHTML = x;
+        }
+    </script>
+    <main class="mainLogin">
+        <!--Formulario de Postagem-->
+        <div class="login">
+            <div class="infoUser">
+                <div class="imgLogin"><img src="{{url_for('static', filename='/img/heart.svg')}}" alt="Logo"></div>
+                <strong>Rede Sociales</strong>
+            </div>
+
+            <form action="/login/" method="POST" class="loginPost">
+                <textarea name="textarea" placeholder="Nome"></textarea>
+
+                <div class="iconsAndButtons">
+                    <button type="submit" class="btnSubmitForm" onClick="get_nome()";>Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+{% endblock %}
